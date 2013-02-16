@@ -1,9 +1,6 @@
 # Ignore bundler config
 /.bundle
+/.idea
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-/.idea
-/db/*
-/Gemfile.lock
+/_site

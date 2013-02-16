@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+title: MyBlog
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+{% for post in paginator.posts %}
+<article>
+  <section class="article_content">
+    {{ post.content }}
+  </section>
 
-    <title>Wangweixian.github.com by WangweiXian</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Wangweixian.github.com</h1>
-        <h2>WangWei 的博客</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/WangweiXian" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <p>WangWei 的博客</p>
-          <a href="test/test.html"> Link test....</a>
-      </section>
-    </div>
-
-  </body>
-</html>
+  <aside class="article_bottom">
+    <span class="article_tags">Tags: {{ post.tags | join: ',' }}</span>
+    <span class="article_update">Last modify: {{ site.time | date: '%Y-%m-%d %H:%M' }}</span>
+  </aside>
+</article>
+<div style="float:none"></div>
+<hr/>
+{% endfor %}

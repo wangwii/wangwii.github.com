@@ -1,0 +1,10 @@
+auto: true
+server: false
+server_port: 80
+url: http://localhost:80
+
+paginate: 5
+permalink: date
+markdown: redcarpet
+lsi: true
+#pygments: true

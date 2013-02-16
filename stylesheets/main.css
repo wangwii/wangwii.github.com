@@ -1,0 +1,84 @@
+body, h1, h2, h3, h4, h5, h6, ul, p, hr {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin: 0;
+  height: 4em;
+  background-color: #667D45;
+  color: #D8ECB3;
+  /*border-bottom: 1px solid #D8ECB3;*/
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
+
+hr {
+  border-color: green;
+}
+
+nav {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  text-align: center;
+  line-height: 2em;
+  margin-right: 1em;
+  /*border: 1px solid #D8ECB3;*/
+}
+
+nav ul li a:link, nav ul li a:visited, footer a:link, footer a:visited {
+  color: #D8ECB3;
+  text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:active, footer a:hover, footer a:active {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+nav ul li input {
+  color: #f0f0f0;
+}
+
+div#container {
+  margin: 0;
+  padding: 0;
+  background-color: #D8ECB3;
+}
+
+article {
+  margin: 0;
+  padding: 1em 2em;
+}
+
+article aside {
+  background-color: #b3b3b3;
+  border-radius: 3px;
+}
+
+footer {
+  margin: 0;
+  padding-left: 1px;
+  color: #D8ECB3;
+  font-size: 0.7em;
+  height: 15px;
+  line-height: 15px;
+  background-color: #667D45;
+  text-align: right;
+}
