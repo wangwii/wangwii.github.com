@@ -1,19 +1,19 @@
 ---
 layout: default
-title: MyBlog
+title: WangWei's Notes
 ---
 
 {% for post in paginator.posts %}
-<article>
-  <section class="article_content">
-    {{ post.content }}
-  </section>
+<section class="part">
+  {{ post.content }}
 
-  <aside class="article_bottom">
-    <span class="article_tags">Tags: {{ post.tags | join: ',' }}</span>
-    <span class="article_update">Last modify: {{ site.time | date: '%Y-%m-%d %H:%M' }}</span>
+  <aside class="row-fluid">
+    <span class="span8">
+      Post in: {{ post.tags | join: ',' }}
+    </span>
+    <span class="span3 offset1">
+      Last modify: {{ site.time | date: '%Y-%m-%d %H:%M' }}
+    </span>
   </aside>
-</article>
-<div style="float:none"></div>
-<hr/>
+</section>
 {% endfor %}

@@ -4,6 +4,11 @@
   <meta charset="utf-8"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WangWei's Notes">
+  <meta name="author" content="">
+
   <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen"/>
   <link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet" media="screen"/>
   <link href="/stylesheets/main.css" rel="stylesheet" media="screen"/>
@@ -11,41 +16,55 @@
   <title>{{ page.title }}</title>
 </head>
 <body>
-<header>
-  <h1>WangWei's Notes</h1>
-</header>
-<hr/>
-<nav>
-  <ul>
-    <li>
-      <a href="/index.html">主页</a>
-    </li>
-    <li>
-      <a href="/categorys.html">分类</a>
-    </li>
-    <li>
-      <a href="/datetime.html">索引</a>
-    </li>
-    <li>
-      <a href="/about.html">关于</a>
-    </li>
-    <!--<li>-->
-    <!-- TODO: remove to right top -->
-    <!--<form>-->
-    <!--<input type="text" value="search on google"/>-->
-    <!--</form>-->
-    <!--</li>-->
-  </ul>
-</nav>
-<div id="container">
-  {{ content }}
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">WangWei's Notes</a>
+
+      <div class="nav-collapse collapse">
+        <form class="form-search" onsubmit="return false">
+          <div class="input-append pull-right">
+            <input type="text" placeholder="search in the site" class="span2"/>
+            <button type="submit" class="btn">
+              <i class="icon-search"></i>
+            </button>
+          </div>
+        </form>
+        <ul class="nav">
+          <li class="active"><a href="/index.html">主页</a></li>
+          <li><a href="/categorys.html">分类</a></li>
+          <li><a href="/datetime.html">索引</a></li>
+          <li><a href="/about.html">关于</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-<footer>
-  © 2013
-  <a href="https://github.com/WangweiXian" target="_blank"><strong>Wang Wei</strong></a>
-  除非另有说明, 本站所有内容均采用
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">
-    『知识共享署名-相同方式共享 3.0 未本地化版本许可协议』</a>进行许可.
-</footer>
+
+<div class="container-fluid">
+
+  <div class="row-fluid">
+    <div class="span12">
+      {{ content }}
+    </div>
+  </div>
+
+  <hr/>
+  <footer>
+    <p>
+      © 2013 <a href="https://github.com/WangweiXian" target="_blank"><strong>Wang Wei</strong></a>
+      除非另有说明, 本站所有内容均采用
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">
+        『知识共享署名-相同方式共享 3.0 未本地化版本许可协议』</a>进行许可.
+    </p>
+  </footer>
+
+</div>
+
 </body>
 </html>
