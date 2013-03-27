@@ -7,3 +7,4 @@
 #### {{page.title}}
 
 + __netstat__，查看网络状态。
++ nbtstat -a 172.16.40.84
