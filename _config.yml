@@ -1,10 +1,10 @@
-auto: true
-server: false
-server_port: 80
-url: http://localhost:80
+watch: true
 
+exclude: ["vendor"]
 paginate: 5
 permalink: date
 markdown: redcarpet
+encoding: UTF-8
+
 lsi: true
 #pygments: true

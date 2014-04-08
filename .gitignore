@@ -1,6 +1,7 @@
 # Ignore bundler config
 /.bundle
 /.idea
+/vendor
 
 # Ignore all logfiles and tempfiles.
 /_site
