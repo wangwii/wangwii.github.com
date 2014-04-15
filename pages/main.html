@@ -1,0 +1,12 @@
+---
+layout: default
+title: main
+---
+
+<div class="jumbotron">
+  <ul>
+    {% for page in site.posts %}
+        <li>{{ page.url }}</li>
+    {% endfor %}
+  </ul>
+</div>

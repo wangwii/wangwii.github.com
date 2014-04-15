@@ -1,35 +1,26 @@
 body {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  /*padding-bottom: 40px;*/
+  /*background-color: #233B21;*/
+  /*background-color: #051405;*/
+  /*background-color: #27541B;*/
 }
 
-section.part {
-  background-color: #BCDBA6;
-  border: 1px solid #102133;
-  margin-bottom: 18px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #f5f5f5;
 }
 
-section.part:nth-child(even) {
-  background-color: #CBCD9C;
+.footer a:link, a:active, a:visited {
+  text-decoration: none;
+  color:#999;
 }
 
-section.part aside {
-  background-color: #D5D6D2;
-}
-
-section.part aside span {
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
-section.part aside span {
-  font-size: 1em;
-  /*line-height: 1.8em;*/
-  padding: 2px 0;
-}
-
-section.part aside span:last-child {
-  text-align: right;
+.footer a:hover{
+  color:#999;
+  text-decoration: underline;
 }

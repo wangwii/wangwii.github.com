@@ -1,10 +1,10 @@
-watch: true
-
-exclude: ["vendor"]
-paginate: 5
+exclude: ["vendor", ".gitignore", ".ruby-version", "README.md", "Gemfile*"]
 permalink: date
-markdown: redcarpet
 encoding: UTF-8
 
 lsi: true
-#pygments: true
+
+#markdown: redcarpet
+kramdown:
+  input: GFM
+
