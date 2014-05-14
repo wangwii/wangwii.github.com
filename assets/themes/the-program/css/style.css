@@ -1029,7 +1029,7 @@ pre {
 @media only screen and (min-width: 1410px) {
   .the-header {
     float: left;
-    width: 19%;
+    width: 15%;
   }
   .the-header .unit-head {
     padding: 26px;
@@ -1067,7 +1067,7 @@ pre {
     -moz-box-shadow: #ffffff 0px 0px 2px;
     -o-box-shadow: #ffffff 0px 0px 2px;
     float: left;
-    width: 81%;
+    width: 95%;
     margin-right: -450px;
   }
   .body .unit-body {
@@ -1085,7 +1085,7 @@ pre {
     display: block;
     float: left;
     padding: 26px 0 0 26px;
-    width: 420px;
+    width: 260px;
   }
   .the-footer h4 {
     font-size: 30px;
