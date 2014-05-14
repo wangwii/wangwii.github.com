@@ -3,6 +3,7 @@ layout: post
 title: "GitHub Flavored Markdown 简介"
 tagline: "Markdown 及 Github 风味的语法"
 comments: false
+category: "Note"
 tags: [web]
 ---
 {% include JB/setup %}
