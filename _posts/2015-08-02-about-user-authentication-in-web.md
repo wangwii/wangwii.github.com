@@ -39,18 +39,16 @@ OAuth协议旨在解决用户个人数据安全分享的问题，例如分享QQ�
 在这个过程中第三方应用通过OAuth协议在取得用户基本信息的同时也认证了用户的身份，看起来和OpenID非常类似——
 一个夸组织的SSO解决方案。
 
-事实上，除了认证（authentication）还有授权（authorization），因为授权和特定系统的功能息息相关，
-这就是为什么有很多不同层面的协议关于认证，但授权却鲜有标准。
+事实上，除了认证（authentication）还有授权（authorization），因为授权和特定系统的功能息息相关，这就是为什么有很多不同层面的协议都关于认证，但授权却鲜有标准。
 但现在好了，就在最近几年出现了一个新的协议
 [SAML(Security Assertion Markup Language)安全断言标记语言](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security)，
 它是一个基于XML的标准，用于在不同的安全域(security domain)之间交换*认证*和*授权*数据。
 所谓的安全域是指：身份提供者（identity provider）和服务提供者（service provider）。
-更多参考信息：
-https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language
-http://searchfinancialsecurity.techtarget.com/definition/SAML
-https://www.onelogin.com/saml
+在该协议中 有三个参与者：
+1. Subject主题，包括：User、App、Workstation等能够象征一个访问(受保护服务——即service provider的)实体。
+2. Service Provider服务提供方，提供特定功能的应用程序或系统。
+3. Identity Provider身份提供者，负责对Subject的身份信息进行验证，并确定其有效性。
 
-http://www.ibm.com/developerworks/cn/websphere/library/techarticles/1111_luol_sso/1111_luol_sso.html
-http://blog.csdn.net/csethcrm/article/details/20694993
-http://blog.csdn.net/peterwanghao/article/details/4271813
-http://www.2cto.com/kf/201312/268620.htmlW
+关于该协议的更多细节请参考以下资源：
+[SAML简介](http://www.2cto.com/kf/201312/268620.html)
+[SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
