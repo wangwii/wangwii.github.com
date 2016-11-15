@@ -4,7 +4,7 @@ title: "About user authentication in web application"
 tagline: "用户认证技术发展简史"
 comments: false
 category: "Note"
-tags: [javascript]
+tags: [javascript, auth]
 ---
 
 用户的注册/登录常被称为『非功能性需求』或『影子需求』，几乎是所有软件的必备功能，至少在我从业以来就
