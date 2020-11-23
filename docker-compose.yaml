@@ -1,0 +1,10 @@
+version: '2'
+services:
+  jekyll:
+    image: 'ruby:2.5.1'
+    ports:
+      - 4000:4000
+    volumes:
+      - ".:/app"
+    command:
+      - "mongod"
