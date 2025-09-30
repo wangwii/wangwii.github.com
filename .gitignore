@@ -1,5 +1,7 @@
-.idea
+tmp/
+.idea/
 .DS_Store
 Thumbs.db
 
 !.gitkeep
+node_modules/

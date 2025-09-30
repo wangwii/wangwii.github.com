@@ -1,0 +1,17 @@
+{
+  "name": "mywebpage",
+  "version": "1.0.0",
+  "author": "WangWei",
+  "description": "Rex's Web page.",
+  "homepage": "https://github.com/wangwii/wangwii.github.com#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangwii/wangwii.github.com.git"
+  },
+  "scripts": {
+    "dev": "serve -d ./"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

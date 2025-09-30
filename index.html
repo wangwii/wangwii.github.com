@@ -1,9 +1,205 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Rex's website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/animation-net.css">
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+  <title>Rex's webpage</title>
 </head>
-<body>
-<header>Rex's website.</header>
+<body id="top">
+  <header>
+    <div class="row">
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>菜单</span></a>
+        <nav id="main-nav-wrap">
+          <ul class="main-navigation">
+            <li class="current"><a class="smoothscroll"  href="#intro" title="">主页</a></li>
+            <li><a class="smoothscroll"  href="#about" title="">关于我</a></li>
+            <li><a class="smoothscroll"  href="#resume" title="">工作经历</a></li>
+            <li><a class="smoothscroll"  href="#services" title="">提供服务</a></li>
+            <li><a class="smoothscroll"  href="#portfolio" title="">生活点滴</a></li>
+            <li><a class="smoothscroll"  href="#contact" title="">联系我</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <div class="row">
+        <div class="col-twelve">
+          <h5>Hello World.</h5>
+          <h1>I am Rex</h1>
+          <p class="intro-position">
+            <span>Programmer</span>
+            <span>Solution Architect</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <ul class="intro-social">
+      <li><a href="https://weibo.com/u/3891156293" target="_blank"><i class="fa fa-weibo"></i></a></li>
+      <li><a href="https://www.facebook.com/ram.wang.wangwei" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCFRBrLih8ern-eWw6RNURfQ" target="_blank"><i class="fa youtube"></i></a></li>
+      <li><a href="https://github.com/wangwii"><i class="fa fa-github"></i></a></li>
+      <li><a href="weixin://dl/chat?username=zhongbai725869" target="_blank"><i class="fa fa-weixin"></i></a></li>
+      <li><a href="#about"><i class="fa fa-arrow-down .vibrate-1" style="color:#cc005f"></i></a></li>
+    </ul>
+  </section>
+
+  <!-- about section
+   ================================================== -->
+  <section id="about">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>关于我</h5>
+        <div class="intro-info">
+          <img src="images/profile-pic.jpg" alt="Profile Picture">
+          <p class="lead">
+            全栈技术专家，拥有全平台软件开发经验，精通Java、Node等多种语言。精通微服务架构、敏捷交付、DevOps等多领域技术。
+            <br/>
+            数字化转型咨询师，秉持技术驱动业务增长的理念，融合 IT 新兴技术为客户提供兼具技术前瞻性与业务实用性的方案。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row about-content">
+      <div class="col-six tab-full">
+        <h3>基本信息</h3>
+        <p>
+          八零年生人，廿年码龄。键盘为剑，代码为诗，于数字江湖一路修行。
+          亲历从PC到云端的科技跃迁，怀揣对技术的赤子之心，深信技术是改变世界的核心力量，愿以老骥伏枥之态，继续挥洒热忱。
+        </p>
+
+        <ul class="info-list">
+          <li>
+            <strong>姓名:</strong>
+            <span>王伟 / Rex Wang</span>
+          </li>
+          <li>
+            <strong>生日:</strong>
+            <span>1980 年 1 月 15 日</span>
+          </li>
+          <li>
+            <strong>工作:</strong>
+            <span>全栈开发, 解决方案架构师</span>
+          </li>
+          <li>
+            <strong>网站:</strong>
+            <span>wangwii.github.com</span>
+          </li>
+          <li>
+            <strong>邮箱:</strong>
+            <span>wangwii@foxmail.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-six tab-full">
+        <h3>技能地图</h3>
+        <p>
+          全栈技术开发，监控运维与AI数智应用底座等平台工程/Platform Engineering方案规划。
+          企业信息技术顶层架构规划和治理、敏捷团队建设及培养，传统行业数字化转型升级咨询服务。
+        </p>
+        <ul class="skill-bars">
+          <li>
+            <div class="progress percent95"><span>95%</span></div>
+            <strong>全栈技术开发</strong>
+          </li>
+          <li>
+            <div class="progress percent85"><span>85%</span></div>
+            <strong>AI 数智平台建设方案</strong>
+          </li>
+          <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>企业上云/云原生架构升级</strong>
+          </li>
+          <li>
+            <div class="progress percent95"><span>95%</span></div>
+            <strong>敏捷开发管理培训服务</strong>
+          </li>
+          <li>
+            <div class="progress percent75"><span>75%</span></div>
+            <strong>企业技术架构治理咨询</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" title="Contact Me" class="button stroke smoothscroll">联系我</a>
+        <a title="Download CV" class="button button-primary"
+           onclick="onDownloadResume(event)"
+           href="/files/my-resume-2025-07-14.pdf">
+          下载简历
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer
+  ================================================== -->
+  <footer>
+    <div class="row">
+      <div class="col-six tab-full">
+        <div class="copyright">
+          <span>
+            Copyright © 2025-present
+            <a href="https://github.com/wangwii" target="_blank">WangWei</a>
+          </span>
+        </div>
+      </div>
+
+      <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function download_file(blob) {
+      let url = null;
+      try {
+        url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = '个人简历.pdf';
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (err){
+      } finally {
+        if (url != null) {
+          URL.revokeObjectURL(url);
+        }
+      }
+    }
+    function onDownloadResume(ev){
+      ev.preventDefault();
+      // ev.stopPropagation();
+      // alert('download from:' + ev.target.href);
+      fetch(ev.target.href)
+        .then(res => res.blob())
+        .then(blob => download_file(blob))
+        .catch(err => console.error('Download failed:', err));
+    }
+  </script>
 </body>
 </html>
